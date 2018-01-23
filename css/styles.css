@@ -1,0 +1,67 @@
+header {
+    background-image: linear-gradient(to right, black 10%, black 100%);
+    height: 100px;
+    padding-top: 20px;
+}
+
+ul {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    list-style-type: none;
+    float: right;
+    padding: 20px;
+    letter-spacing: 2px;
+
+}
+
+li {
+    display: inline-block;
+    margin-left: 35px;
+}
+a {
+    color: white;
+
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/********
+
+HERO STYLES
+
+**********/
+
+
+.hero {
+    background: linear-gradient(black 5%, black 10%, transparent), url(../imgs/hero.jpg);
+    height: calc(100vh - 100px);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    font-size: 80px;
+}
+
+.hero p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: justify;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.hero-text-container {
+    padding-top: 400px;
+    padding-left: 200px;
+}
