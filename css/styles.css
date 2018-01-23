@@ -4,30 +4,37 @@ header {
     padding-top: 20px;
 }
 
-ul {
+a {
+    color: white;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* * * * * * * * *
+Desktop Nav Styles
+* * * * * * * * * */
+
+.desktop-nav ul {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
     color: white;
     list-style-type: none;
     float: right;
     padding: 20px;
     letter-spacing: 2px;
-
 }
 
-li {
+.desktop-nav li {
     display: inline-block;
     margin-left: 35px;
 }
-a {
-    color: white;
 
-}
-a:hover {
-    text-decoration: underline;
-    color: white;
-}
+
 
 /********
 
@@ -50,6 +57,7 @@ HERO STYLES
     color: white;
     text-align: left;
     font-size: 80px;
+    margin: 0;
 }
 
 .hero p {
@@ -58,10 +66,25 @@ HERO STYLES
     text-align: justify;
     text-transform: uppercase;
     font-weight: 600;
+    margin-bottom: 35px;
+
 
 }
 
+.hero-text-container .button {
+    margin-top: 25px;
+}
+
 .hero-text-container {
-    padding-top: 400px;
+    padding-top: 300px;
     padding-left: 200px;
+}
+
+.button {
+    text-align: left;
+    border-radius: 15px;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #e52d27, #b31217);
+
+    /* background: linear-gradient(to right, #f00000, #dc281e); */
 }
