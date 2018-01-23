@@ -7,7 +7,7 @@ header {
 a {
     color: white;
     text-transform: uppercase;
-    
+
     font-weight: 700;
     letter-spacing: 1px;
 
@@ -31,6 +31,7 @@ Desktop Nav Styles
     float: right;
     padding: 20px;
     letter-spacing: 2px;
+
 }
 
 .desktop-nav li {
