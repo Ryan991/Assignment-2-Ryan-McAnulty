@@ -4,15 +4,6 @@ header {
     padding-top: 20px;
 }
 
-a {
-    color: white;
-    text-transform: uppercase;
-
-    font-weight: 700;
-    letter-spacing: 1px;
-
-}
-
 a:hover {
     text-decoration: underline;
     color: white;
@@ -39,13 +30,61 @@ Desktop Nav Styles
     margin-left: 35px;
 }
 
+.desktop-nav a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+  }
+
+/* * * * * * * * *
+Mobile Nav Styles
+* * * * * * * */
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav .hamburger-container {
+  width: 40px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: -4px;
+  float: right;
+}
+
+/* .mobile-nav button {
+    background: transparent;
+    border: none;
+    color: white;
+} */
 
 
-/********
 
+
+@media (max-width: 900px) {
+
+  .mobile-nav {
+    display: block;
+  }
+
+
+  .desktop-nav {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+/* * * * * * * *
 HERO STYLES
-
-**********/
+* * * * * * * * */
 
 
 .hero {
@@ -85,7 +124,7 @@ HERO STYLES
     padding-left: 200px;
 }
 
-.button {
+.request-link {
     text-align: left;
     border-radius: 15px;
     padding: 10px 30px;
