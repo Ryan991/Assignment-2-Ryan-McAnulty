@@ -22,6 +22,7 @@ HERO STYLES
 .hero {
     background: linear-gradient(black 5%, black 5%, transparent), url(../imgs/hero.jpg);
     height: calc(100vh - 100px);
+    width: 100%;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -54,6 +55,7 @@ HERO STYLES
 .hero-text-container {
     padding-top: 300px;
     padding-left: 200px;
+    width: 100%;
 }
 
 .request-link {
@@ -137,7 +139,7 @@ Mobile Nav Styles
 }
 
   .hero {
-      height: 500px;
+      height: auto;
       background-position: center;
       background-size: cover;
 }
@@ -163,14 +165,26 @@ Mobile Nav Styles
       letter-spacing: 1px;
   }
 
+    .in-progress .col-md-4 {
+      display: none;
+  }
+
+    .in-progres .col-sm-12 {
+        display: inline;
+    }
+
 }
 
 /* In-progress section  */
-
+.progress-container {
+    background: black;
+    height: 600px;
+    width: 100%;
+}
 .in-progress {
   height: 400px;
-}
 
+}
 .in-progress .col-md-4 {
   background-image: url(../Imgs/progress1.jpg);
   background-position: center;
@@ -180,23 +194,55 @@ Mobile Nav Styles
   height: 400px;
   margin-right: -4px;
   padding: 20px;
+  border-radius: 50%;
+  margin-top: 20px;
 
 }
 
 .in-progress .col-md-4:nth-of-type(2) {
   background-image: url(../Imgs/progress2.jpg);
   margin-left: 5px;
+  background-size: cover;
+  background-position: center;
   display: inline-block;
   opacity: .7;
+  border-radius: 50%;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .in-progress .col-md-4:nth-of-type(3) {
   background-image: url(../Imgs/progress3.jpg);
   margin-left: 5px;
   padding: 0;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
   display: inline-block;
   opacity: .7;
+  border-radius: 50%;
+  margin-top: 20px;
 }
+
+.in-progress .col-md-4:nth-of-type(1) h2 {
+    padding-top: 275px;
+    color: ;
+    font-weight: 700;
+}
+
+.in-progress .col-md-4:nth-of-type(2) h2 {
+    padding-top: 300px;
+    color: ;
+    font-weight: 700;
+}
+
+.in-progress .col-md-4:nth-of-type(3) h2 {
+    padding-top: 300px;
+    color: ;
+    font-weight: 700;
+}
+
+
 /* .in-progress .col-md-4 {
   background: yellow;
   height: 400px;
@@ -210,18 +256,20 @@ Mobile Nav Styles
   text-align: center;
 }
 
-/* .middle .col-12 {
-  /* background: linear-gradient(rgba(255,0,0,.2), rgba(255,0,0,3)); */
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.0) 0%,
-      rgba(0, 0, 0, 0.0) 70%,
-      rgba(0, 0, 0, 0.2) 80%,
-      rgba(0, 0, 0, 0.7) 90%,
-      rgba(0, 0, 0, 0.9) 95%
-      rgba(0, 0, 0, 1.0) 100%);
+.middle .row {
 
-} */
+}
+.middle .col-12 {
+    background: black;
+    margin-left: -4px;
+}
 
 .middle h2 {
-  float: left;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+@media (max-width) {
+
 }
