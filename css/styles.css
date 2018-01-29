@@ -3,23 +3,16 @@ header {
     height: 100px;
     padding-top: 30px;
     width: 100%;
-
-
 }
-
 
 a:hover {
     text-decoration: underline;
     color: white;
 }
 
-
-
-
 /* * * * * * * *
 HERO STYLES
 * * * * * * * * */
-
 
 .hero {
     background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.1)), url(../imgs/hero.jpg);
@@ -48,8 +41,6 @@ HERO STYLES
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 35px;
-
-
 }
 
 .hero-text-container .button {
@@ -69,8 +60,6 @@ HERO STYLES
     background: linear-gradient(to right, #e52d27, #b31217);
     color: white;
     margin-right: 210px;
-
-    /* background: linear-gradient(to right, #f00000, #dc281e); */
 }
 
 
@@ -81,9 +70,9 @@ Desktop Nav Styles
 .logo {
   float: left;
   color: red;
-  height: 100px;
-  padding-left: 200px;
+  padding-left: 100px;
 }
+
 .desktop-nav ul {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
@@ -92,7 +81,6 @@ Desktop Nav Styles
     float: right;
     padding: 10px 100px;
     letter-spacing: 2px;
-
 }
 
 .desktop-nav li {
@@ -105,8 +93,7 @@ Desktop Nav Styles
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-
-  }
+}
 
 /* * * * * * * * *
 Mobile Nav Styles
@@ -118,74 +105,28 @@ Mobile Nav Styles
 
 .mobile-nav .hamburger-container {
   width: 10%;
-  vertical-align: top;
   display: inline-block;
   margin-top: 15px;
   float: right;
 }
-
 
 .mobile-nav button {
     height: 20px;
     border: none;
     color: white;
     background: transparent;
-
 }
 
-
-
-
-@media (max-width: 1000px) {
-
-  .mobile-nav {
-    display: block;
+.logo i {
+  float: left;
+  margin-top: 5px;
+  display: inline-block;
+  padding-left: 20px;
 }
 
-
-  .desktop-nav {
-    display: none;
-}
-
-  .hero {
-      height: auto;
-      background-position: center;
-      background-size: cover;
-      background-attachment: local;
-}
-
-  .hero-text-container {
-    padding: 100px;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: left;
-  }
-
-    .hero-text-container .hero-header {
-    font-size: 25px;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 20px;
-    text-decoration: underline;
-  }
-
-    .hero-text-container p {
-      font-size: 12px;
-      text-align: justify;
-      letter-spacing: 1px;
-  }
-
-    .in-progress .col-md-4 {
-      display: none;
-  }
-
-    .in-progres .col-sm-12 {
-        display: inline;
-    }
-
-}
-
-/* Middle header */
+/* * * * * * * * * * *
+* * * Middle header
+ * * * * * ** * * * * */
 
 .middle {
   display: flex;
@@ -200,7 +141,6 @@ Mobile Nav Styles
   text-align: center;
   padding-top: 150px;
   font-family: 'Lobster', cursive;
-  font-size: 25px;
   color: #000000;
 }
 
@@ -209,12 +149,14 @@ Mobile Nav Styles
 }
 
 
-/* In-progress section  */
+/* * * * * * ** * * * *
+* * * In-progress section
+* * * * * ** * * * * */
+
 .container-1 {
     background: white;
     height: 800px;
     width: 100%;
-    /* opacity: .9; */
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -234,19 +176,19 @@ Mobile Nav Styles
   height: 50%;
   flex: 2;
   overflow: hidden;
-
+  box-shadow: 10px 10px 20px black;
 }
 
 .in-progress .second-box {
   background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,0.4)), url(../Imgs/progress2.jpg);
   background-size: cover;
   background-position: center;
-  /* opacity: .9; */
   border-radius: 10%;
   margin: 100px auto;
   height: 50%;
   flex: 2;
   overflow: hidden;
+  box-shadow: 10px 10px 20px black;
 }
 
 
@@ -305,44 +247,123 @@ Mobile Nav Styles
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8));
   color: white;
   height: 100px;
-
-
-
 }
 
 .footer-ul {
   display: flex;
-  align-content: center;
-  justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  flex-shrink: 0;
-
-
+  padding: 0;
 }
+
 .footer-ul li {
   list-style-type: none;
   padding: 0 100px;
   color: white;
-
-
 }
 
-
-.testimonials {
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
     background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,0.4)), url(../Imgs/testimonials1.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 800px;
     opacity: .8;
-    /* background-attachment: fixed; */
 }
 
+.quote-h2 {
+  display: flex;
+  font-family: 'Lobster', cursive;
+  align-content: center;
+  color: white;
+}
+
+.quote-h2 h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.quote label {
+  display: flex;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: underline;
+  padding-top: 20px;
+  align-content: flex-start;
+}
+
+.quote input {
+  box-shadow: 5px 5px 5px black;
+
+}
+
+.quote textarea {
+  box-shadow: 5px 5px 5px black;
+}
+.quote button {
+  color: white;
+  font-weight: 700;
+  border: none;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 10px 30px;
+  background: linear-gradient(to right, #e52d27, #b31217);
+}
+
+
+@media (max-width: 1000px) {
+
+  .mobile-nav {
+    display: block;
+}
+
+  .desktop-nav {
+    display: none;
+}
+
+  .mobile-nav .hamburger-container {
+    margin-top: 0;
+}
+
+  .hero {
+      height: auto;
+      background-position: center;
+      background-size: cover;
+      background-attachment: local;
+}
+
+  .hero-text-container {
+    padding: 100px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .hero-text-container .hero-header {
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+
+  .hero-text-container p {
+    font-size: 12px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
 
 @media (max-width: 800px) {
 
@@ -350,6 +371,25 @@ Mobile Nav Styles
         padding-top: 0px;
         padding-right: 10px;
         height: 50px;
+    }
+
+    .logo {
+      padding-left: 0px;
+      margin-top: 10px;
+    }
+
+    .logo i {
+      padding-left: 5px;
+    }
+
+    .mobile-nav .hamburger-container {
+      margin-top: 15px;
+      width: 10%;
+      padding-right: 5px;
+    }
+
+    .mobile-nav .hamburger-container i {
+      padding-right: 10px;
     }
     .middle .header-2 {
       padding-top: 100px;
@@ -412,6 +452,13 @@ Mobile Nav Styles
         height: 0;
     }
 
+    .in-progress .car-text {
+      display: none;
+    }
+
+    .in-progress h2{
+      display: none;
+    }
     .footer-ul li {
       list-style-type: none;
       padding: 0 30px;
@@ -420,6 +467,3 @@ Mobile Nav Styles
     .request-link {
       margin-right: 0;
 }
-
-
-/****** Testimonial Section ****** */
